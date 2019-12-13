@@ -10,6 +10,7 @@ class Anagrams
     elsif @word.count(@word_checked) == 0
       return "These are antigrams"
     end
+
     @word
   end
 end

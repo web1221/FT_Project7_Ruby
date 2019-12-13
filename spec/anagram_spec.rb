@@ -19,4 +19,8 @@ describe("#anagram_checker") do
     anagram = Anagrams.new("week", "hat")
     expect(anagram.anagram_checker()).to(eq('These are antigrams'))
   end
+  it("should check to see if a word or phrase is an anagram") do
+    anagram = Anagrams.new("listen", "silent")
+    expect(anagram.anagram_checker()).to(eq('These are antigrams'))
+  end
 end

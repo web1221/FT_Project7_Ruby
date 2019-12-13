@@ -22,9 +22,9 @@
 * __Input: week, hat__
 * __Output: These are antigrams__
 
-######
-* __Input: __
-* __Output: __
+###### The program should return whether a word or phrase is an anagram
+* __Input: listen__
+* __Output: silent__
 
 
 ## Description
