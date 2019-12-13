@@ -18,9 +18,9 @@
 * __Input: Hey There__
 * __Output: heythere__
 
-######
-* __Input: __
-* __Output: __
+###### The program should return "This is an antigram" if none of the letters match
+* __Input: week, hat__
+* __Output: These are antigrams__
 
 ######
 * __Input: __

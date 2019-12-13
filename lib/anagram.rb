@@ -1,6 +1,7 @@
 class Anagrams
-  def initialize(word)
-    @word = word.gsub(/\s+/, "")
+  def initialize(word, word_checked)
+    @word = word.gsub(/\s+/, "").downcase()
+    @word_checked = word_checked.gsub(/\s+/, "").downcase()
   end
 
   def anagram_checker()
