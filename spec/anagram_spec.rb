@@ -8,11 +8,11 @@ describe("#anagram_checker") do
     expect(anagram.anagram_checker()).to(eq('enter a vaild word'))
   end
   it("remove white space from phrases and words being tested") do
-    anagram = Anagrams.new("nag a ram", "anagram")
-    expect(anagram.anagram_checker()).to(eq('nagaram'))
+    anagram = Anagrams.new("till there ", "anagram")
+    expect(anagram.anagram_checker()).to(eq('tillthere'))
   end
   it("should account for mix-matching cases") do
-    anagram = Anagrams.new("Hey ThEre PEoPle", "Hey ThEre PEoPle")
+    anagram = Anagrams.new("Hey ThEre PEoPle", "anagram")
     expect(anagram.anagram_checker()).to(eq('heytherepeople'))
   end
   it("should check to see if a word is an antigram") do
@@ -20,7 +20,7 @@ describe("#anagram_checker") do
     expect(anagram.anagram_checker()).to(eq('These are antigrams'))
   end
   it("should check to see if a word or phrase is an anagram") do
-    anagram = Anagrams.new("listen", "silent")
-    expect(anagram.anagram_checker()).to(eq('These are antigrams'))
+    anagram = Anagrams.new("Tom Marvolo Riddle", "I am Lord Voldemort")
+    expect(anagram.anagram_checker()).to(eq('These are anagrams'))
   end
 end
