@@ -7,6 +7,8 @@ class Anagrams
   def anagram_checker()
     if @word.scan(/[aeiouy]/).count == 0
       return "enter a vaild word"
+    elsif @word.count(@word_checked) == 0
+      return "These are antigrams"
     end
     @word
   end
