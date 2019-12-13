@@ -1,10 +1,9 @@
 class Anagrams
   def initialize(word)
-    @word = word
+    @word = word.gsub(/\s+/, "")
   end
 
   def anagram_checker()
-    @word.gsub!(/\s+/, "")
     if @word.scan(/[aeiouy]/).count == 0
       return "enter a vaild word"
     end

@@ -14,9 +14,9 @@
 * __Input: Nag a ram__
 * __Output: Nagaram__
 
-######
-* __Input: __
-* __Output: __
+###### The program should account for words and phrases having different cases
+* __Input: Hey There__
+* __Output: heythere__
 
 ######
 * __Input: __

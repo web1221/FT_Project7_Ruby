@@ -11,4 +11,8 @@ describe("#anagram_checker") do
     anagram = Anagrams.new("nag a ram")
     expect(anagram.anagram_checker()).to(eq('nagaram'))
   end
+  it("should account for mix-matching cases") do
+    anagram = Anagrams.new("Hey ThEre PEoPle")
+    expect(anagram.anagram_checker()).to(eq('heytherepeople'))
+  end
 end
