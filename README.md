@@ -10,9 +10,9 @@
 * __Input: trwts__
 * __Output: Please input a real word__
 
-###### The pro.
-* __Input: __
-* __Output: __
+###### The program should account for phrases being tested by removing white space.
+* __Input: Nag a ram__
+* __Output: Nagaram__
 
 ######
 * __Input: __

@@ -7,4 +7,8 @@ describe("#anagram_checker") do
     anagram = Anagrams.new("twsdqz")
     expect(anagram.anagram_checker()).to(eq('enter a vaild word'))
   end
+  it("remove white space from phrases and words being tested") do
+    anagram = Anagrams.new("nag a ram")
+    expect(anagram.anagram_checker()).to(eq('nagaram'))
+  end
 end
