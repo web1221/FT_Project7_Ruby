@@ -14,6 +14,9 @@
 * __Input: Nag a ram__
 * __Output: Nagaram__
 
+###### If the same word is entered for word and the word it's checked against the program should return 'these are the same words'
+* __Input: "Hey", "Hey"__
+* __Output: "These are the same word"__
 ###### The program should account for words and phrases having different cases
 * __Input: Hey There__
 * __Output: heythere__
