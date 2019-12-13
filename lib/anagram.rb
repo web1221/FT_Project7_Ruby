@@ -1,11 +1,12 @@
 class Anagrams
-  def initialize()
+  def initialize(word)
     @word = word
-    @vowels = ["a", "i", "o", "u", "e", "y"]
   end
 
   def anagram_checker()
-    
+    if @word.scan(/[aeiouy]/).count == 0
+      "enter a vaild word"
+    end
 
   end
 end
