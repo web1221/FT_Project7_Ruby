@@ -7,9 +7,9 @@ describe("#anagram_checker") do
     anagram = Anagrams.new("twsdqz", "ttwr")
     expect(anagram.anagram_checker()).to(eq('Enter a vaild word'))
   end
-  it("returns 'enter a vaild word' if letters in word repeat more than 2 times") do
+  it("returns 'These are the same words' with word and word_checked match exactly") do
     anagram = Anagrams.new("hey", "hey")
-    expect(anagram.anagram_checker()).to(eq('These are the same word'))
+    expect(anagram.anagram_checker()).to(eq('These are the same words'))
   end
   it("remove white space from phrases and words being tested") do
     anagram = Anagrams.new("till there ", "anagram")
