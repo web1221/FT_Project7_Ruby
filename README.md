@@ -37,7 +37,7 @@
 
 * Copy link from github
 * Open terminal and __git clone__ link
-* __cd__ into project and if you have bundler installed you can __bundle rspec__
+* __cd__ into project and if you have bundler installed you can run __bundle__ to use Rspec
 * Use __rspec__ to test code, and see if a word or phrase is a anagram or an antigrama
 
 ## Known Bugs
