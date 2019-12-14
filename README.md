@@ -15,8 +15,8 @@
 * __Output: Nagaram__
 
 ###### If the same word is entered for word and the word it's checked against the program should return 'these are the same words'
-* __Input: "Hey", "Hey"__
-* __Output: "These are the same word"__
+* __Input: Hey, Hey__
+* __Output: These are the same word__
 ###### The program should account for words and phrases having different cases
 * __Input: Hey There__
 * __Output: heythere__
@@ -31,23 +31,18 @@
 
 
 ## Description
-  _This application was created to demonstrate BDD practice with Ruby. The application is checking to see whether an a word or phrase is an anagram or an anitgram_
+  _This application was created to demonstrate BDD practice with Ruby. The application is checking to see whether a word or phrase is an anagram or an anitgram_
 
 ## Setup/Installation Requirements
 
-*
-*
-*
-*
-*
-*
-*
-*
-
+* Copy link from github
+* Open terminal and __git clone__ link
+* __cd__ into project and if you have bundler installed you can __bundle rspec__
+* Use __rspec__ to test code, and see if a word or phrase is a anagram or an antigrama
 
 ## Known Bugs
 
-_There are no know bugs. If you come across one please contact me._
+_There are no known bugs. If you come across one please contact me._
 
 ## Support and contact details
 
@@ -55,7 +50,7 @@ _For question you can email me at AngelaWeber95@hotmail.com_
 
 ## Technologies Used
 
-_To build this application Ruby, Rspec, Bundler_
+_This application was built using Ruby. Testing was done with Rspec, and debugging done with Pry_
 
 ### License
 
