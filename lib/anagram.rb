@@ -13,8 +13,6 @@ class Anagrams
       "These are antigrams"
     elsif @word.split("").sort == @word_checked.split("").sort()
       "These are anagrams"
-    else
-      @word
     end
   end
 end

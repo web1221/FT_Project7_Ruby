@@ -12,12 +12,12 @@ describe("#anagram_checker") do
     expect(anagram.anagram_checker()).to(eq('These are the same words'))
   end
   it("remove white space from phrases and words being tested") do
-    anagram = Anagrams.new("till there ", "anagram")
-    expect(anagram.anagram_checker()).to(eq('tillthere'))
+    anagram = Anagrams.new("Voices rant on", "Conversation")
+    expect(anagram.anagram_checker()).to(eq('These are anagrams'))
   end
   it("should account for mix-matching cases") do
-    anagram = Anagrams.new("Hey ThEre PEoPle", "anagram")
-    expect(anagram.anagram_checker()).to(eq('heytherepeople'))
+    anagram = Anagrams.new("SCHOOl Master", "the classroom")
+    expect(anagram.anagram_checker()).to(eq('These are anagrams'))
   end
   it("should check to see if a word is an antigram") do
     anagram = Anagrams.new("week", "hat")
