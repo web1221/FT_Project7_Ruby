@@ -2,10 +2,15 @@ require('rspec')
 require('anagram')
 require('pry')
 
-describe("#anagram_checker") do
-  it("returns 'enter a vaild word' if inputed word doesn't include a vowel") do
-    anagram = Anagrams.new("twsdqz", "ttwr")
-    expect(anagram.anagram_checker()).to(eq('Enter a vaild word'))
+describe("Anagrams") do
+  it("returns true if word alone or in a phrase does not have a vowel") do
+    anagram = Anagrams.new("hqpxzc hey", "qqiit")
+    expect(anagram.vowel_checker?(anagram.word)).to(eq(true))
+    expect(anagram.vowel_checker?(anagram.word_checked)).to(eq(false))
+  end
+  it("returns 'enter a vaild word' if inputed words doesn't include a vowel") do
+    anagram = Anagrams.new("zzzzqsczz", "tawr qwwqi")
+    expect(anagram.anagram_checker()).to(eq("Enter a vaild word"))
   end
   it("returns 'These are the same words' with word and word_checked match exactly") do
     anagram = Anagrams.new("hey", "hey")
