@@ -7,15 +7,11 @@ class Anagrams
   end
 
   def vowel_checker?(str_checked)
-    vaild_array = []
+    vaild = []
     str_checked.split(" ").each do |w|
-      if w.scan(/[aeiouy]/).count == 0
-        vaild_array.push(true)
-      else
-        vaild_array.push(false)
-      end
+      w.scan(/[aeiouy]/).count != 0 ? vaild.push(true) : vaild.push(false)
     end
-    vaild_array.include?(true) ? true : false
+    vaild.include?(false) ? true : false
   end
 
   def anagram_checker()

@@ -4,7 +4,7 @@ require('pry')
 
 describe("Anagrams") do
   it("returns true if word alone or in a phrase does not have a vowel") do
-    anagram = Anagrams.new("hqpxzc hey", "qqiit")
+    anagram = Anagrams.new(" hey hqxzc hey", "qqiit")
     expect(anagram.vowel_checker?(anagram.word)).to(eq(true))
     expect(anagram.vowel_checker?(anagram.word_checked)).to(eq(false))
   end
