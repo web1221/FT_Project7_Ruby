@@ -6,11 +6,8 @@ class Anagrams
     @word_checked = word_checked.downcase
   end
 
-  def vowel_checker?(str_checked)
-    vaild = []
-    str_checked.split(" ").each do |w|
-      w.scan(/[aeiouy]/).count != 0 ? vaild.push(true) : vaild.push(false)
-    end
+  def vowel_checker?(str)
+    vaild = str.split(" ").map{|w| w.scan(/[aeiouy]/).count != 0 ? true : false}
     vaild.include?(false) ? true : false
   end
 
